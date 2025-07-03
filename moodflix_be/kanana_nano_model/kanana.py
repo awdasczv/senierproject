@@ -2,8 +2,8 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 # 외부 모듈 import
-from function_handler import detect_and_execute_function, get_system_message
-from utils import update_chat_history
+from .function_handler import detect_and_execute_function, get_system_message
+from .utils import update_chat_history
 
 # 전역 변수로 모델과 토크나이저 선언
 model = None
